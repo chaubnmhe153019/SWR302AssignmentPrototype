@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/staff_manage.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main-body">
+            <!--NAVIGATION-->
+            <nav>
+                <img src="images/logo.png" class="nav_logo" alt="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div class="main-form row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <!--Avatar source-->
+                                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="Admin" class="rounded-circle" width="150">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="d-flex align-items-center mb-3"><i
+                                    class="material-icons text-info mr-2">Information</i></h5>
+
+                            <form action="http://localhost:8080/QuizPractice/EditProfileController" method="POST">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">First Name</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="fname" class="form-control" value="Luong Viet">
+                                        <input type="hidden" name="email" class="form-control"
+                                            value="thanglvhe153248@fpt.edu.vn">
+
+                                        <!--avatar update later-->
+
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Last Name</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="lname" class="form-control" value="Thang">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Birth</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="date" name="birth" class="form-control" value="24/5/2001">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Gender</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                         <input type="radio" name="gender" value="m" value="m" ${user.gender=='m'
+                                            ? 'checked' : '' }> Male <br>
+                                         <input type="radio" name="gender" value="f" value="f" ${user.gender=='f'
+                                            ? 'checked' : '' }> Female
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Description</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="description" class="form-control"
+                                            value="This is a master ">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Phone number</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="phonenum" class="form-control" value="0423415312">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Address</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="address" class="form-control"
+                                            value="Thach Hoa, Thach That, Ha Noi">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Avatar</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="avatar" class="form-control" value="link dien avatar">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Position</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="position" class="form-control"
+                                            value="Student of Hogwarts">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">School</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="school" class="form-control" value="Hogwarts">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Company</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="company" class="form-control" value="Sad">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Sign</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="sign" class="form-control" value="Nope">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Visa</h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="text" name="visa" class="form-control" value="Nope">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0">Payment method</h5>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <select name="paymethod">
+                                            <option>COD</option>
+                                            <option>Cash</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr>
+                                <input type="submit" class="btn btn-primary px-4" value="Save Changes">
+                                <a class="btn btn-info " target="__blank"
+                                    href="${path}/views/profile/profile.jsp">Cancel</a>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

@@ -111,6 +111,12 @@ showcase h1{
     border-radius: 10px;
 }
 
+.course-name{
+    text-align: left;
+    margin-left: 48px;
+    margin-top: 50px;
+}
+
 footer{
     background-color: #333;
     color: #fff;

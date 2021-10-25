@@ -5,9 +5,9 @@ body{
 }
 
 .wrapper{
-    background: url(images/school.jpeg)
+    background: url(img/school.jpeg)
     no-repeat center center;
-    min-height: 30rem;
+    min-height: 30rem;  
 }
 
 nav{
@@ -32,12 +32,6 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     padding: 20px;
-}
-
-img1{
-    width: 14%;
-    margin-left: 1.9rem;
-    margin-top: -4%;
 }
 
 nav ul li:hover{
